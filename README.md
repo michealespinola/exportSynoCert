@@ -1,4 +1,4 @@
-Export a Synology-managed DDNS certificate to a directory for use by Docker-based reverse proxies or other TLS-enabled applications. DSM remains responsible for certificate issuance and renewal. The script automatically discovers the configured Synology DDNS hostname, selects exactly one matching certificate by case-insensitive Common Name, and exports its PEM files plus an RSA compatibility keypair. 
+This is a script to export a Synology-managed DDNS certificate to a directory for use by Docker-based reverse proxies or other TLS-enabled applications. DSM remains responsible for certificate issuance and renewal. The script automatically discovers the configured Synology DDNS hostname, selects the appropriate matching certificate by case-insensitive Common Name, and exports its PEM files plus an RSA compatibility keypair. 
 
 **Note:** Caddy is currently the only supported proxy reload handler. The script was written with other handlers in mind if there is interest. Pull Requests are welcome.
 
