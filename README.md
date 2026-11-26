@@ -29,8 +29,6 @@ Copy `exportSynoCert.sh` to a trusted directory on the NAS and make it executabl
 
 ```bash
 chmod 755 exportSynoCert.sh
-./exportSynoCert.sh -s
-./exportSynoCert.sh -i
 ```
 
 | Option | Behavior |
@@ -42,6 +40,8 @@ chmod 755 exportSynoCert.sh
 | `--reload` | Detect, validate and reload the matching proxy; requires `-o` |
 
 ```bash
+./exportSynoCert.sh -s
+./exportSynoCert.sh -i
 ./exportSynoCert.sh -o /volume1/docker/caddy/certs
 ./exportSynoCert.sh -o /volume1/docker/caddy/certs --reload
 ```
