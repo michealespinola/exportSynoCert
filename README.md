@@ -58,4 +58,4 @@ The export copies source PEM files, generates `fullchain.pem` from the RSA certi
 
 A global atomic directory lock at `/run/exportSynoCert.lock.d` serializes exports without requiring a supplemental utility.
 
-With `--reload`, the script inspects running Docker containers for the output directory or an ancestor mount and probes supported proxy executables. It requires exactly one matching candidate. Caddy uses `/etc/caddy/Caddyfile`, validates its configuration, and force-reloads it even if the export is unchanged. Mount matching does not prove that the proxy references the exported files. Without `--reload`, Docker is not needed and no proxy commands are issued.
+With `--reload`, the script inspects running Docker containers for the output directory or an ancestor mount and probes supported proxy executables. It requires exactly one matching candidate. Caddy uses `/etc/caddy/Caddyfile`, validates its configuration, and force-reloads it even if the export is unchanged. Without `--reload`, Docker is not needed and no proxy commands are issued.
